@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SimpleDropDownCellView" customModule="circles" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWC-vi-fYj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1q9-dn-YRw">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" name="LightBlue"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="h4I-5B-W5D"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c4-Zz-2co" customClass="LabelRegular" customModule="circles" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="355" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1q9-dn-YRw" secondAttribute="trailing" id="9CK-EV-jJA"/>
+                        <constraint firstAttribute="bottom" secondItem="0c4-Zz-2co" secondAttribute="bottom" constant="10" id="BLB-l2-bZK"/>
+                        <constraint firstItem="0c4-Zz-2co" firstAttribute="top" secondItem="FWC-vi-fYj" secondAttribute="top" constant="10" id="BQQ-Gg-p68"/>
+                        <constraint firstItem="1q9-dn-YRw" firstAttribute="leading" secondItem="FWC-vi-fYj" secondAttribute="leading" id="LBW-Rb-5qm"/>
+                        <constraint firstItem="0c4-Zz-2co" firstAttribute="leading" secondItem="FWC-vi-fYj" secondAttribute="leading" constant="10" id="PkL-qD-5sg"/>
+                        <constraint firstItem="1q9-dn-YRw" firstAttribute="top" secondItem="FWC-vi-fYj" secondAttribute="top" id="uWN-4F-WqA"/>
+                        <constraint firstItem="0c4-Zz-2co" firstAttribute="centerX" secondItem="FWC-vi-fYj" secondAttribute="centerX" id="z6e-LX-miH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FWC-vi-fYj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Q2m-n6-ghK"/>
+                <constraint firstItem="FWC-vi-fYj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jQb-2h-yKo"/>
+                <constraint firstItem="FWC-vi-fYj" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="lU6-MR-GpE"/>
+                <constraint firstAttribute="bottom" secondItem="FWC-vi-fYj" secondAttribute="bottom" id="rl8-AN-uL3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="D1f-RJ-Jfr"/>
+            <connections>
+                <outlet property="optionLabel" destination="0c4-Zz-2co" id="qdV-a4-X1N"/>
+                <outlet property="selectedBackgroundView" destination="1q9-dn-YRw" id="Jym-AA-aMc"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="LightBlue">
+            <color red="0.83137254901960789" green="0.89411764705882357" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
