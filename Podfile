@@ -20,6 +20,7 @@ target 'TemplateProject' do
   pod 'FBSDKLoginKit'
   pod 'AccountKit'
   pod 'DropDown'
+  pod 'AWSS3'
 
   target 'TemplateProjectTests' do
     inherit! :search_paths

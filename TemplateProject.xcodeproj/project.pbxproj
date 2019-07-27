@@ -33,6 +33,14 @@
 		EC057C2F229C3247009194B5 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC057C2E229C3247009194B5 /* TextFieldExtension.swift */; };
 		EC057C31229C329B009194B5 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC057C30229C329B009194B5 /* ImageViewExtension.swift */; };
 		EC057C33229C32EE009194B5 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC057C32229C32EE009194B5 /* StoryboardExtension.swift */; };
+		EC5BD42522EC685200EE8E5D /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BD41F22EC685200EE8E5D /* GradientButtonView.swift */; };
+		EC5BD42622EC685200EE8E5D /* GradientButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5BD42022EC685200EE8E5D /* GradientButtonView.xib */; };
+		EC5BD42722EC685200EE8E5D /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BD42122EC685200EE8E5D /* BaseTextView.swift */; };
+		EC5BD42822EC685200EE8E5D /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BD42322EC685200EE8E5D /* NoDataTableViewCell.swift */; };
+		EC5BD42922EC685200EE8E5D /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5BD42422EC685200EE8E5D /* NoDataTableViewCell.xib */; };
+		EC5BD42C22EC689A00EE8E5D /* NPMediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BD42A22EC689A00EE8E5D /* NPMediaManager.swift */; };
+		EC5BD42D22EC689A00EE8E5D /* NPAWSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BD42B22EC689A00EE8E5D /* NPAWSManager.swift */; };
+		EC5BD42F22EC68CE00EE8E5D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5BD42E22EC68CE00EE8E5D /* awsconfiguration.json */; };
 		EC7FA079229C1BF30094295D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FA078229C1BF30094295D /* AppDelegate.swift */; };
 		EC7FA07B229C1BF30094295D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FA07A229C1BF30094295D /* BaseViewController.swift */; };
 		EC7FA07E229C1BF30094295D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FA07C229C1BF30094295D /* Main.storyboard */; };
@@ -87,6 +95,14 @@
 		EC057C2E229C3247009194B5 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		EC057C30229C329B009194B5 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		EC057C32229C32EE009194B5 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		EC5BD41F22EC685200EE8E5D /* GradientButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
+		EC5BD42022EC685200EE8E5D /* GradientButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradientButtonView.xib; sourceTree = "<group>"; };
+		EC5BD42122EC685200EE8E5D /* BaseTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		EC5BD42322EC685200EE8E5D /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
+		EC5BD42422EC685200EE8E5D /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		EC5BD42A22EC689A00EE8E5D /* NPMediaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPMediaManager.swift; sourceTree = "<group>"; };
+		EC5BD42B22EC689A00EE8E5D /* NPAWSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPAWSManager.swift; sourceTree = "<group>"; };
+		EC5BD42E22EC68CE00EE8E5D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		EC7FA075229C1BF30094295D /* TemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7FA078229C1BF30094295D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7FA07A229C1BF30094295D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +191,9 @@
 		EC057C08229C2C15009194B5 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				EC5BD42122EC685200EE8E5D /* BaseTextView.swift */,
+				EC5BD41E22EC685200EE8E5D /* GradientButtonView */,
+				EC5BD42222EC685200EE8E5D /* NoDataTableViewCell */,
 				EC057C0B229C2C47009194B5 /* NPCommonLoaderView */,
 			);
 			path = CustomControls;
@@ -192,6 +211,8 @@
 		EC057C14229C2D2E009194B5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				EC5BD42B22EC689A00EE8E5D /* NPAWSManager.swift */,
+				EC5BD42A22EC689A00EE8E5D /* NPMediaManager.swift */,
 				EC057C19229C2DCD009194B5 /* SocialLoginManager */,
 				EC057C15229C2D43009194B5 /* LocationManager.swift */,
 				EC057C1C229C2E2F009194B5 /* UtilityManager.swift */,
@@ -233,6 +254,24 @@
 				EC057C27229C304F009194B5 /* FirstViewController.swift */,
 			);
 			path = FirstViewController;
+			sourceTree = "<group>";
+		};
+		EC5BD41E22EC685200EE8E5D /* GradientButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BD41F22EC685200EE8E5D /* GradientButtonView.swift */,
+				EC5BD42022EC685200EE8E5D /* GradientButtonView.xib */,
+			);
+			path = GradientButtonView;
+			sourceTree = "<group>";
+		};
+		EC5BD42222EC685200EE8E5D /* NoDataTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BD42322EC685200EE8E5D /* NoDataTableViewCell.swift */,
+				EC5BD42422EC685200EE8E5D /* NoDataTableViewCell.xib */,
+			);
+			path = NoDataTableViewCell;
 			sourceTree = "<group>";
 		};
 		EC7FA06C229C1BF30094295D = {
@@ -289,6 +328,7 @@
 		EC7FA0A9229C1D1A0094295D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				EC5BD42E22EC68CE00EE8E5D /* awsconfiguration.json */,
 				EC7FA078229C1BF30094295D /* AppDelegate.swift */,
 				EC7FA082229C1BF40094295D /* Assets.xcassets */,
 				EC7FA0AA229C1D260094295D /* InfoPlist */,
@@ -438,10 +478,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5BD42F22EC68CE00EE8E5D /* awsconfiguration.json in Resources */,
 				EC057C24229C2F47009194B5 /* SimpleDropDownCellView.xib in Resources */,
 				EC057C0F229C2C47009194B5 /* NPCommonLoaderView.xib in Resources */,
+				EC5BD42622EC685200EE8E5D /* GradientButtonView.xib in Resources */,
 				EC7FA086229C1BF40094295D /* LaunchScreen.storyboard in Resources */,
 				EC7FA083229C1BF40094295D /* Assets.xcassets in Resources */,
+				EC5BD42922EC685200EE8E5D /* NoDataTableViewCell.xib in Resources */,
 				EC7FA07E229C1BF30094295D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,12 +510,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5BD42822EC685200EE8E5D /* NoDataTableViewCell.swift in Sources */,
 				EC057C25229C2F47009194B5 /* SimpleDropDownCellView.swift in Sources */,
 				EC057C18229C2D84009194B5 /* SocialLoginManager.swift in Sources */,
 				EC057C01229C226D009194B5 /* UserDefaultsExtension.swift in Sources */,
 				EC057C16229C2D43009194B5 /* LocationManager.swift in Sources */,
 				EC057C2D229C321C009194B5 /* CollectionViewExtension.swift in Sources */,
 				EC7FA081229C1BF30094295D /* TemplateProject.xcdatamodeld in Sources */,
+				EC5BD42722EC685200EE8E5D /* BaseTextView.swift in Sources */,
 				EC057C31229C329B009194B5 /* ImageViewExtension.swift in Sources */,
 				EC057C1B229C2DEB009194B5 /* SocialUserModel.swift in Sources */,
 				EC057BFB229C2152009194B5 /* StringExtension.swift in Sources */,
@@ -482,11 +527,14 @@
 				EC057BF3229C1F0E009194B5 /* ServerCommunicationManager.swift in Sources */,
 				EC057BFF229C21A4009194B5 /* DateExtension.swift in Sources */,
 				EC7FA079229C1BF30094295D /* AppDelegate.swift in Sources */,
+				EC5BD42D22EC689A00EE8E5D /* NPAWSManager.swift in Sources */,
 				EC057BF5229C1FDE009194B5 /* ServerConstant.swift in Sources */,
 				EC057C13229C2CFE009194B5 /* ServiceManager.swift in Sources */,
 				EC057C0E229C2C47009194B5 /* NPCommonLoaderView.swift in Sources */,
 				EC057BFD229C2163009194B5 /* ViewExtension.swift in Sources */,
+				EC5BD42C22EC689A00EE8E5D /* NPMediaManager.swift in Sources */,
 				EC057C2F229C3247009194B5 /* TextFieldExtension.swift in Sources */,
+				EC5BD42522EC685200EE8E5D /* GradientButtonView.swift in Sources */,
 				EC057C1F229C2ED1009194B5 /* DropDownManager.swift in Sources */,
 				EC057BF8229C20F7009194B5 /* Constant.swift in Sources */,
 				EC057C33229C32EE009194B5 /* StoryboardExtension.swift in Sources */,

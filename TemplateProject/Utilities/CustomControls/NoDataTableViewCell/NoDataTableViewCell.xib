@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NoDataTableViewCell" id="KGk-i7-Jjw" customClass="NoDataTableViewCell" customModule="circles" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4L-x8-dQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-L7-K8Q" customClass="LabelBold" customModule="circles" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" name="NavyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kw9-L7-K8Q" firstAttribute="top" secondItem="N4L-x8-dQ1" secondAttribute="top" id="Ohl-nI-Fh9"/>
+                            <constraint firstItem="kw9-L7-K8Q" firstAttribute="centerY" secondItem="N4L-x8-dQ1" secondAttribute="centerY" id="Zhs-oe-TPf"/>
+                            <constraint firstItem="kw9-L7-K8Q" firstAttribute="centerX" secondItem="N4L-x8-dQ1" secondAttribute="centerX" id="nTo-pQ-I9B"/>
+                            <constraint firstItem="kw9-L7-K8Q" firstAttribute="leading" secondItem="N4L-x8-dQ1" secondAttribute="leading" id="wd5-Pm-vOS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="N4L-x8-dQ1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0cU-V7-KdL"/>
+                    <constraint firstItem="N4L-x8-dQ1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Ak-H9-1gR"/>
+                    <constraint firstItem="N4L-x8-dQ1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="N27-D0-5SV"/>
+                    <constraint firstItem="N4L-x8-dQ1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fO3-68-th7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelNoDataMessage" destination="kw9-L7-K8Q" id="9ja-Fv-87N"/>
+                <outlet property="viewMainContainer" destination="N4L-x8-dQ1" id="8Gk-dj-5oM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="NavyBlue">
+            <color red="0.10196078431372549" green="0.27058823529411763" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

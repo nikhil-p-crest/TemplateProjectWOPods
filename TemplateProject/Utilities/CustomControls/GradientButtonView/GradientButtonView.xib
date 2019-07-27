@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GradientButtonView" customModule="circles" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Rh2-zg-M0V" id="SBb-4n-Zbd"/>
+                <outlet property="viewGradient" destination="EDM-XP-KEV" id="TUW-Wk-u4j"/>
+                <outlet property="viewMainContainer" destination="Ytq-al-Zg7" id="nZb-fz-RSB"/>
+                <outlet property="viewMainContent" destination="iN0-l3-epB" id="igj-WZ-X02"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytq-al-Zg7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDM-XP-KEV">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh2-zg-M0V" customClass="ButtonMedium" customModule="circles" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="zyq-Sc-LPt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EDM-XP-KEV" firstAttribute="centerX" secondItem="Ytq-al-Zg7" secondAttribute="centerX" id="9eS-Jz-aZH"/>
+                        <constraint firstItem="Rh2-zg-M0V" firstAttribute="leading" secondItem="EDM-XP-KEV" secondAttribute="leading" id="PzW-kc-Cbo"/>
+                        <constraint firstItem="EDM-XP-KEV" firstAttribute="leading" secondItem="Ytq-al-Zg7" secondAttribute="leading" id="TO8-3d-RFd"/>
+                        <constraint firstItem="EDM-XP-KEV" firstAttribute="top" secondItem="Ytq-al-Zg7" secondAttribute="top" id="Tqp-lM-ttM"/>
+                        <constraint firstItem="Rh2-zg-M0V" firstAttribute="centerY" secondItem="EDM-XP-KEV" secondAttribute="centerY" id="XN9-1d-oOw"/>
+                        <constraint firstItem="Rh2-zg-M0V" firstAttribute="centerX" secondItem="EDM-XP-KEV" secondAttribute="centerX" id="by6-5D-f3I"/>
+                        <constraint firstItem="Rh2-zg-M0V" firstAttribute="top" secondItem="EDM-XP-KEV" secondAttribute="top" id="g1c-RT-eSt"/>
+                        <constraint firstItem="EDM-XP-KEV" firstAttribute="centerY" secondItem="Ytq-al-Zg7" secondAttribute="centerY" id="m5O-Bl-Uxt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ytq-al-Zg7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2aR-3t-NB3"/>
+                <constraint firstItem="Ytq-al-Zg7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Eb-oY-Ozm"/>
+                <constraint firstItem="Ytq-al-Zg7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y3N-TJ-aO2"/>
+                <constraint firstItem="Ytq-al-Zg7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mJ1-GZ-s4g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

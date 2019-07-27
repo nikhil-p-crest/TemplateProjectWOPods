@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class BaseViewController: UIViewController {
 
@@ -71,3 +72,34 @@ extension BaseViewController {
     
 }
 
+extension BaseViewController {
+    
+    fileprivate func setupMenuViewController() {
+        if SideMenuManager.default.menuLeftNavigationController == nil {
+            let menuLeftNavigationController = self.storyboard!.instantiateViewController(withIdentifier: "sideMenu") as! UISideMenuNavigationController
+            SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
+            SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+            SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+            SideMenuManager.default.menuPresentMode = .viewSlideInOut
+            SideMenuManager.default.menuFadeStatusBar = false
+            SideMenuManager.default.menuWidth = (UIScreen.main.bounds.width * 0.80)
+        }
+    }
+    
+    func addMenuLeftNavigationButton() {
+        let button = UIButton.init(type: UIButton.ButtonType.system)
+        let size: CGFloat = (self.navigationController?.navigationBar.bounds.height ?? 40)
+        button.frame = CGRect.init(x: 0, y: 0, width: size, height: size)
+//        button.setImage(Constant.Image.icMenu, for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(didTapButtonLeftMenu), for: UIControl.Event.touchUpInside)
+        button.tintColor = UIColor.white
+        button.contentHorizontalAlignment = .left
+        let barButtonItem = UIBarButtonItem.init(customView: button)
+        self.navigationItem.leftBarButtonItem = barButtonItem
+    }
+    
+    @IBAction func didTapButtonLeftMenu(_ sender: UIButton) {
+        self.present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+    }
+    
+}
